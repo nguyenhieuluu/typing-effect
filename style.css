@@ -1,0 +1,43 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;    
+    overflow: hidden;
+    color: white;
+}
+
+.container{
+    width: 100%;
+    top: 40%;
+    margin: 30px;
+
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+ 
+}
+
+#typing{
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+    
+}
+
+#typing::after{
+   content: "";
+   position: absolute; 
+   right: -4px;
+   height: 90%;
+   border-right: 3px solid rgb(214, 21, 21);
+   animation: blink 1s infinite ease;
+}
+
+@keyframes blink{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+}
